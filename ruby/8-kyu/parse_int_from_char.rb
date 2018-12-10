@@ -1,3 +1,3 @@
 def get_age(age)
-  age.split('').first.to_i
+  age.to_i
 end
