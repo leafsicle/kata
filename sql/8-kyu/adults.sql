@@ -1,3 +1,3 @@
 select *
 from users
-where age >=18
+where age >=18 | 
