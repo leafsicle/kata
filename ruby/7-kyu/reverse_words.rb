@@ -3,4 +3,5 @@ def reverse_words(str)
 end
 #I learned a thing!
 #   str.gsub(/\S+/, &:reverse)
-# this was a better way to do this. I need to learn gsub better
+# this was a better way to do this.
+#I really need to learn GSUB and REGEX better
