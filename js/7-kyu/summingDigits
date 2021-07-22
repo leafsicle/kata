@@ -1,0 +1,13 @@
+function sumDigits(number) {
+  let sum =0
+  if(number<0){
+//     there has to be a better way to do bundle this with something else
+    number*=-1
+  }
+    number=number.toString()
+    for(let i=0; i<number.length; i++){
+      sum+=parseInt(number[i])
+    }
+  return sum
+}
+
