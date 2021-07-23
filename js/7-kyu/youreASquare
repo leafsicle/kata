@@ -1,0 +1,8 @@
+var isSquare = function(n){
+  if(n>=0){
+    let square = Math.sqrt(n)
+    return Math.floor(square)===square
+  } else {
+    return false;
+  }
+}
