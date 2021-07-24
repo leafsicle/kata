@@ -6,3 +6,6 @@ var isSquare = function(n){
     return false;
   }
 }
+//clever solution from submission:
+//const isSquare = n => Number.isInteger(Math.sqrt(n));
+

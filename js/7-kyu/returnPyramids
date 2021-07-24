@@ -1,0 +1,27 @@
+function pyramid(n){
+  //complete n iterations. n[0] should be /\ and n[-1] has n*2 _ chars
+  //it should also be n-1 spaces from the left side based on the current iteration
+  //we can set the 'first line' as the else since that is always consistent and then just make sure
+  //that anything >1 is in the main loop
+  let string = []
+  if(n>1){  
+    let inner=0
+    let trim = n-1
+    let space = " "
+    for(let i = 0; i<n;i++){
+      if(i!=(n-1)){
+        let newLine = space.repeat(trim)+"/"+space.repeat(2*inner)+"\\\n"
+        string.push(newLine)
+        inner++
+        trim--
+      } else {
+         let newLine = "/"+"_".repeat((2*inner))+"\\\n"
+         string.push(newLine)
+      }
+    }
+  }
+  else{
+    let lastLine ='/\\\n'
+    string.push(lastLine)
+  }
+  return string.join('')
