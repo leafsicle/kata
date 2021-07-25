@@ -1,0 +1,13 @@
+ction twoSum(numbers, target) {
+  let indexArr =[]
+  for (let i =0; i<numbers.length; i++){
+    let baseNumToAdd = numbers[i]
+    for (let j=i+1;j<numbers.length;j++)    {
+      let tempSum = baseNumToAdd + numbers[j]
+      if (tempSum === target){
+        indexArr.push(i,j)
+      }
+    }
+  }
+  return indexArr
+}
