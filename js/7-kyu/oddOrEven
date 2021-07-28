@@ -1,0 +1,16 @@
+function oddOrEven(array) {
+  let total=0 
+  array.forEach(num=>{
+    total+=num
+  })
+  if(total%2===0){
+    return "even"
+  }
+  return "odd"
+}
+
+//BElow is what I wanted to do without knowing how. I tried to create a reduction function
+// but wasn't able to iterate through. at least I had the right idea
+//function oddOrEven(arr) {
+//  return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even'
+//}
