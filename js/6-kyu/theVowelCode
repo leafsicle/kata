@@ -1,0 +1,33 @@
+let codex = {
+  a:'1',
+  e:'2',
+  i:'3',
+  o:'4',
+  u:'5'
+}
+
+let tempStr = []
+
+function encode(string) {
+  tempStr = []
+  for(let strChar in string){
+    if(string[strChar] in codex){
+      let temp = string[strChar]   
+      let newChar = codex[temp]
+      tempStr.push(newChar)
+    } else tempStr.push(string[strChar])
+  }
+    return tempStr.join("")
+}
+
+function decode(string) {
+  tempStr = []
+  for(let strChar in string){
+    if(string[strChar] in Object.values(codex)){
+      let key = Object.keys(codex).find(key => codex[key] === string[strChar])
+      tempStr.push(key)
+    } 
+    else tempStr.push(string[strChar])
+  }
+  return tempStr.join("")
+}
