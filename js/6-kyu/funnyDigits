@@ -1,0 +1,16 @@
+digPow=(n,p)=>{
+  let splitN = (n.toString().split(""))
+  let expCount = p
+  let sum = 0
+  for (i=0;i<splitN.length; i++){
+    sum += splitN[i] ** expCount
+    expCount ++
+  }
+  
+  let target = sum/n
+  if(Number.isInteger(target)){
+    return target   
+  } else { 
+    return -1
+  }
+}
