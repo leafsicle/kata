@@ -1,0 +1,13 @@
+let race=(v1, v2, g)=> {
+  if(v1>v2){
+    return null
+  } else{
+    // we need to calculate, from a seconds perspective, how many seconds it will take 
+    // v2-v1 as the difference in their speeds to cover the lead
+    let seconds = Math.floor(3600*g/(v2-v1))
+    return[Math.floor(seconds/3600), Math.floor(seconds/60)%60,seconds%60]  
+    //for self notes; hours is the floor of raw seconds/ 3600seconds
+    //minutes is the value of minutes/60 and the remainder after divided by 60
+    //seconds is uses the remainder to knock out any remaining float
+  }
+}
