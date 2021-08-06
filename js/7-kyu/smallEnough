@@ -1,0 +1,3 @@
+smallEnough=(a, limit)=>{
+  return a.length=== a.filter(val=>val<=limit).length
+}

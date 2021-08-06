@@ -1,0 +1,14 @@
+dataReverse=data=> {
+  let newBytes= []
+  let temp=[]
+  while(data.length>0){
+    for(let i=0;i<8;i++){
+      temp[i]=data[i]
+    }
+    newBytes.unshift(temp)
+    data.splice(0,8)
+    temp=[]
+  }
+  return [].concat(...newBytes)
+// since .flat() isn't implemented 
+}
