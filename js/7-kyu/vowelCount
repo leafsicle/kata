@@ -1,0 +1,9 @@
+let getCount= str => {
+  var vowelsCount = 0;
+  let vowels = ['a','e','i','o','u']
+  
+  str.split('').filter(ltr=>{
+    vowels.includes(ltr)?vowelsCount++:''
+  })
+  return vowelsCount
+}
