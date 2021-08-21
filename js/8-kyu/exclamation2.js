@@ -6,3 +6,8 @@ remove= s =>{
     
   return arr.join('')
 }
+
+//alternately
+//remove=(s)=>{
+//  return s.replace(/!+$/, '');
+//}
