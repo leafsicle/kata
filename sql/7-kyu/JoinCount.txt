@@ -1,0 +1,6 @@
+SELECT  
+  people.*,
+  COUNT(toys) AS toy_count FROM people
+JOIN toys 
+ON people.id=toys.people_id
+group by 1
