@@ -1,0 +1,9 @@
+function liftoff(instructions){
+  let maxNo = Math.max( ...instructions ) 
+  let retStr= ""
+  while(maxNo>0){
+    retStr+= maxNo.toString() + ' '
+    maxNo--
+  }
+  return retStr+ "liftoff!"
+}
