@@ -1,0 +1,7 @@
+squareDigits=num=>{
+  let newStr=""
+  num.toString().split('').forEach(num=>{
+    newStr+=num**2
+  })
+  return Number.parseInt(newStr)
+}
