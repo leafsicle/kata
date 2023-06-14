@@ -1,14 +1,10 @@
-# I want to import a csv file with scores and calculate a handicap
-# lets create a data model for the csv file
-
 def handicap_calc(scores)
-  if scores.length < 8
-    return "You need at least 8 scores to calculate a handicap."
+  if scores.length < 1
+    return "You need at least 1 score to start calculating a handicap."
   end
-  scores.sort!
-  scores.shift
-  scores.shift
-  puts scores
+  score_diff = differentials_calc(scores.map { |score| differentials_calc(score[:adjusted_gross_score], score[:course_rating], score[:slope]) })
+  avg_diff = differentials_average(score_diff)
+  statistical_significance(avg_diff)
 end
 
 def differentials_calc(adjusted_gross_score, course_rating, slope)
@@ -27,4 +23,8 @@ def differentials_average(scores)
     score_count = 8
   end
   (scores.shift(score_count).sum / score_count).round(1)
+end
+
+def statistical_significance(diff_avg)
+  diff_avg * 0.96
 end

@@ -1,0 +1,125 @@
+{
+  "last_10_scores": [
+    26.7,
+    24.5,
+    24.1,
+    27.4,
+    26.3,
+    21.3,
+    26.6,
+    22.6,
+    25.6,
+    23.5
+  ],
+  "last_15_scores": [
+    26.7,
+    24.5,
+    24.1,
+    27.4,
+    26.3,
+    21.3,
+    26.6,
+    22.6,
+    25.6,
+    23.5,
+    26.7,
+    24.5,
+    24.1,
+    27.4,
+    26.3
+  ],
+  "last_20_scores": [
+    26.7,
+    24.5,
+    24.1,
+    27.4,
+    26.3,
+    15.3,
+    26.6,
+    22.6,
+    25.6,
+    14.5,
+    10.0,
+    24.5,
+    24.1,
+    27.4,
+    13.3,
+    24.5,
+    24.1,
+    27.4,
+    26.3,
+    21.3
+  ],
+  "scores_data": [
+    {
+      "id": 1,
+      "adjusted_gross_score": 75,
+      "course_rating": 70,
+      "slope": 120,
+      "score_differential": 4.7
+    },
+    {
+      "id": 2,
+      "adjusted_gross_score": 80,
+      "course_rating": 72,
+      "slope": 115,
+      "score_differential": 7.9
+    },
+    {
+      "id": 3,
+      "adjusted_gross_score": 90,
+      "course_rating": 68,
+      "slope": 125,
+      "score_differential": 19.9
+    },
+    {
+      "id": 4,
+      "adjusted_gross_score": 95,
+      "course_rating": 74,
+      "slope": 118,
+      "score_differential": 20.1
+    },
+    {
+      "id": 5,
+      "adjusted_gross_score": 82,
+      "course_rating": 69,
+      "slope": 112,
+      "score_differential": 13.1
+    },
+    {
+      "id": 6,
+      "adjusted_gross_score": 78,
+      "course_rating": 71,
+      "slope": 116,
+      "score_differential": 6.8
+    },
+    {
+      "id": 7,
+      "adjusted_gross_score": 88,
+      "course_rating": 73,
+      "slope": 122,
+      "score_differential": 13.9
+    },
+    {
+      "id": 8,
+      "adjusted_gross_score": 93,
+      "course_rating": 75,
+      "slope": 119,
+      "score_differential": 17.1
+    },
+    {
+      "id": 9,
+      "adjusted_gross_score": 79,
+      "course_rating": 70,
+      "slope": 114,
+      "score_differential": 8.9
+    },
+    {
+      "id": 10,
+      "adjusted_gross_score": 87,
+      "course_rating": 72,
+      "slope": 117,
+      "score_differential": 14.5
+    }
+  ]
+}
