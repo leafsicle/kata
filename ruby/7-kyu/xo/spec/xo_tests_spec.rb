@@ -9,7 +9,7 @@ RSpec.describe "Exes and Ohs::" do
     expect(XO("xxOo")).to be true
   end
 end
-escribe("Random tests") do
+describe("Random tests") do
   def randint(a, b) = rand(b - a + 1).+(a)
 
   def XOsol(str) = lambda { |s| s.count("o") == s.count("x") }.call(str.downcase)
